@@ -68,11 +68,12 @@
             
             <div class="flex-1 relative group w-full lg:max-w-xl">
                 <div class="absolute -inset-4 bg-gradient-to-tr from-blue-200 to-transparent rounded-[40px] blur-2xl opacity-40"></div>
-                <div class="relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-white video-container">
-                    <video class="w-full h-full object-cover" autoplay muted loop playsinline poster="https://ae01.alicdn.com/kf/S82810532a55b48ee8fd0a245e04ba575W.jpg">
+                <div class="relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-white video-container bg-black">
+                    <!-- הסרתי את ה-muted והוספתי controls כדי שיהיה ניתן לשמוע סאונד -->
+                    <video class="w-full h-full object-cover" autoplay loop playsinline controls poster="https://ae01.alicdn.com/kf/S82810532a55b48ee8fd0a245e04ba575W.jpg">
                         <source src="https://video.aliexpress-media.com/play/u/ae_sg_item/2200758766500/p/1/e/6/t/10301/1100190350892.mp4?from=chrome&definition=h265" type="video/mp4">
                     </video>
-                    <div class="absolute bottom-6 left-6 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full text-white text-xs font-bold flex items-center gap-2">
+                    <div class="absolute bottom-6 right-6 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full text-white text-xs font-bold flex items-center gap-2 pointer-events-none">
                         <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
                         הדגמה חיה
                     </div>
